@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D83C7F3814B54A0B001FC1C9 /* icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D83C7F3714B54A0B001FC1C9 /* icon_normal.png */; };
+		D881EA3014E0664E003A94B3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D881EA2F14E0664E003A94B3 /* Default@2x.png */; };
+		D881EA3214E06653003A94B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D881EA3114E06653003A94B3 /* Default.png */; };
+		E116505913AFF16000049EE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116505813AFF16000049EE1 /* UIKit.framework */; };
+		E116505B13AFF16000049EE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116505A13AFF16000049EE1 /* Foundation.framework */; };
+		E116505D13AFF16000049EE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116505C13AFF16000049EE1 /* CoreGraphics.framework */; };
+		E116506313AFF16000049EE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E116506113AFF16000049EE1 /* InfoPlist.strings */; };
+		E116506613AFF16000049EE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E116506513AFF16000049EE1 /* main.m */; };
+		E116506913AFF16000049EE1 /* TorchLED4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E116506813AFF16000049EE1 /* TorchLED4AppDelegate.m */; };
+		E116506C13AFF16000049EE1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E116506A13AFF16000049EE1 /* MainWindow.xib */; };
+		E116506F13AFF16000049EE1 /* TorchLED4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E116506E13AFF16000049EE1 /* TorchLED4ViewController.m */; };
+		E116507213AFF16000049EE1 /* TorchLED4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E116507013AFF16000049EE1 /* TorchLED4ViewController.xib */; };
+		E116507913AFF1C700049EE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116507813AFF1C700049EE1 /* AVFoundation.framework */; };
+		E116507B13B0025100049EE1 /* TouchLED4 BG.png in Resources */ = {isa = PBXBuildFile; fileRef = E116507A13B0025100049EE1 /* TouchLED4 BG.png */; };
+		E116507D13B00CD800049EE1 /* TouchLED4 BG OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = E116507C13B00CD800049EE1 /* TouchLED4 BG OFF.png */; };
+		E116508013B02F9D00049EE1 /* turnedOffButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E116507E13B02F9D00049EE1 /* turnedOffButton.png */; };
+		E116508113B02F9D00049EE1 /* turnedONButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E116507F13B02F9D00049EE1 /* turnedONButton.png */; };
+		E116508313B0366300049EE1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E116508213B0366300049EE1 /* icon.png */; };
+		E18BAAAA13B424A50068AC38 /* WhiteScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E18BAAA813B424A50068AC38 /* WhiteScreen.m */; };
+		E18BAAAB13B424A50068AC38 /* WhiteScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18BAAA913B424A50068AC38 /* WhiteScreen.xib */; };
+		E18BAAAE13B428710068AC38 /* turnedOffButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = E18BAAAD13B428710068AC38 /* turnedOffButton2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D83C7F3714B54A0B001FC1C9 /* icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_normal.png; sourceTree = "<group>"; };
+		D881EA2F14E0664E003A94B3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		D881EA3114E06653003A94B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		E116505413AFF16000049EE1 /* TorchLED4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorchLED4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E116505813AFF16000049EE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E116505A13AFF16000049EE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E116505C13AFF16000049EE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E116506013AFF16000049EE1 /* TorchLED4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TorchLED4-Info.plist"; sourceTree = "<group>"; };
+		E116506213AFF16000049EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E116506413AFF16000049EE1 /* TorchLED4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TorchLED4-Prefix.pch"; sourceTree = "<group>"; };
+		E116506513AFF16000049EE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E116506713AFF16000049EE1 /* TorchLED4AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchLED4AppDelegate.h; sourceTree = "<group>"; };
+		E116506813AFF16000049EE1 /* TorchLED4AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorchLED4AppDelegate.m; sourceTree = "<group>"; };
+		E116506B13AFF16000049EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E116506D13AFF16000049EE1 /* TorchLED4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchLED4ViewController.h; sourceTree = "<group>"; };
+		E116506E13AFF16000049EE1 /* TorchLED4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorchLED4ViewController.m; sourceTree = "<group>"; };
+		E116507113AFF16000049EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TorchLED4ViewController.xib; sourceTree = "<group>"; };
+		E116507813AFF1C700049EE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E116507A13B0025100049EE1 /* TouchLED4 BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TouchLED4 BG.png"; sourceTree = "<group>"; };
+		E116507C13B00CD800049EE1 /* TouchLED4 BG OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TouchLED4 BG OFF.png"; sourceTree = "<group>"; };
+		E116507E13B02F9D00049EE1 /* turnedOffButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turnedOffButton.png; sourceTree = "<group>"; };
+		E116507F13B02F9D00049EE1 /* turnedONButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turnedONButton.png; sourceTree = "<group>"; };
+		E116508213B0366300049EE1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E18BAAA713B424A50068AC38 /* WhiteScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteScreen.h; sourceTree = "<group>"; };
+		E18BAAA813B424A50068AC38 /* WhiteScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteScreen.m; sourceTree = "<group>"; };
+		E18BAAA913B424A50068AC38 /* WhiteScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhiteScreen.xib; sourceTree = "<group>"; };
+		E18BAAAD13B428710068AC38 /* turnedOffButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turnedOffButton2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E116505113AFF16000049EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E116507913AFF1C700049EE1 /* AVFoundation.framework in Frameworks */,
+				E116505913AFF16000049EE1 /* UIKit.framework in Frameworks */,
+				E116505B13AFF16000049EE1 /* Foundation.framework in Frameworks */,
+				E116505D13AFF16000049EE1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E116504913AFF16000049EE1 = {
+			isa = PBXGroup;
+			children = (
+				E116505E13AFF16000049EE1 /* TorchLED4 */,
+				E116505713AFF16000049EE1 /* Frameworks */,
+				E116505513AFF16000049EE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E116505513AFF16000049EE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E116505413AFF16000049EE1 /* TorchLED4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E116505713AFF16000049EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E116507813AFF1C700049EE1 /* AVFoundation.framework */,
+				E116505813AFF16000049EE1 /* UIKit.framework */,
+				E116505A13AFF16000049EE1 /* Foundation.framework */,
+				E116505C13AFF16000049EE1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E116505E13AFF16000049EE1 /* TorchLED4 */ = {
+			isa = PBXGroup;
+			children = (
+				E18BAAA713B424A50068AC38 /* WhiteScreen.h */,
+				E18BAAA813B424A50068AC38 /* WhiteScreen.m */,
+				E18BAAA913B424A50068AC38 /* WhiteScreen.xib */,
+				E116506713AFF16000049EE1 /* TorchLED4AppDelegate.h */,
+				E116506813AFF16000049EE1 /* TorchLED4AppDelegate.m */,
+				E116506A13AFF16000049EE1 /* MainWindow.xib */,
+				E116506D13AFF16000049EE1 /* TorchLED4ViewController.h */,
+				E116506E13AFF16000049EE1 /* TorchLED4ViewController.m */,
+				E116507013AFF16000049EE1 /* TorchLED4ViewController.xib */,
+				E116505F13AFF16000049EE1 /* Supporting Files */,
+			);
+			path = TorchLED4;
+			sourceTree = "<group>";
+		};
+		E116505F13AFF16000049EE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D881EA3114E06653003A94B3 /* Default.png */,
+				D881EA2F14E0664E003A94B3 /* Default@2x.png */,
+				D83C7F3714B54A0B001FC1C9 /* icon_normal.png */,
+				E18BAAAD13B428710068AC38 /* turnedOffButton2.png */,
+				E116508213B0366300049EE1 /* icon.png */,
+				E116507E13B02F9D00049EE1 /* turnedOffButton.png */,
+				E116507F13B02F9D00049EE1 /* turnedONButton.png */,
+				E116507C13B00CD800049EE1 /* TouchLED4 BG OFF.png */,
+				E116507A13B0025100049EE1 /* TouchLED4 BG.png */,
+				E116506013AFF16000049EE1 /* TorchLED4-Info.plist */,
+				E116506113AFF16000049EE1 /* InfoPlist.strings */,
+				E116506413AFF16000049EE1 /* TorchLED4-Prefix.pch */,
+				E116506513AFF16000049EE1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E116505313AFF16000049EE1 /* TorchLED4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E116507513AFF16000049EE1 /* Build configuration list for PBXNativeTarget "TorchLED4" */;
+			buildPhases = (
+				E116505013AFF16000049EE1 /* Sources */,
+				E116505113AFF16000049EE1 /* Frameworks */,
+				E116505213AFF16000049EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorchLED4;
+			productName = TorchLED4;
+			productReference = E116505413AFF16000049EE1 /* TorchLED4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E116504B13AFF16000049EE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Nearsoft;
+			};
+			buildConfigurationList = E116504E13AFF16000049EE1 /* Build configuration list for PBXProject "TorchLED4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E116504913AFF16000049EE1;
+			productRefGroup = E116505513AFF16000049EE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E116505313AFF16000049EE1 /* TorchLED4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E116505213AFF16000049EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E116506313AFF16000049EE1 /* InfoPlist.strings in Resources */,
+				E116506C13AFF16000049EE1 /* MainWindow.xib in Resources */,
+				E116507213AFF16000049EE1 /* TorchLED4ViewController.xib in Resources */,
+				E116507B13B0025100049EE1 /* TouchLED4 BG.png in Resources */,
+				E116507D13B00CD800049EE1 /* TouchLED4 BG OFF.png in Resources */,
+				E116508013B02F9D00049EE1 /* turnedOffButton.png in Resources */,
+				E116508113B02F9D00049EE1 /* turnedONButton.png in Resources */,
+				E116508313B0366300049EE1 /* icon.png in Resources */,
+				E18BAAAB13B424A50068AC38 /* WhiteScreen.xib in Resources */,
+				E18BAAAE13B428710068AC38 /* turnedOffButton2.png in Resources */,
+				D83C7F3814B54A0B001FC1C9 /* icon_normal.png in Resources */,
+				D881EA3014E0664E003A94B3 /* Default@2x.png in Resources */,
+				D881EA3214E06653003A94B3 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E116505013AFF16000049EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E116506613AFF16000049EE1 /* main.m in Sources */,
+				E116506913AFF16000049EE1 /* TorchLED4AppDelegate.m in Sources */,
+				E116506F13AFF16000049EE1 /* TorchLED4ViewController.m in Sources */,
+				E18BAAAA13B424A50068AC38 /* WhiteScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E116506113AFF16000049EE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E116506213AFF16000049EE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E116506A13AFF16000049EE1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E116506B13AFF16000049EE1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E116507013AFF16000049EE1 /* TorchLED4ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E116507113AFF16000049EE1 /* en */,
+			);
+			name = TorchLED4ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E116507313AFF16000049EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jesus Guerra Rosas (68LM5YZ7AF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesus Guerra Rosas (68LM5YZ7AF)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "7D2DCDC7-957B-4C57-AA92-6DFB9429E715";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7D2DCDC7-957B-4C57-AA92-6DFB9429E715";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E116507413AFF16000049EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jesus Guerra Rosas (68LM5YZ7AF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesus Guerra Rosas (68LM5YZ7AF)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "7D2DCDC7-957B-4C57-AA92-6DFB9429E715";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7D2DCDC7-957B-4C57-AA92-6DFB9429E715";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E116507613AFF16000049EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorchLED4/TorchLED4-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TorchLED4/TorchLED4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E116507713AFF16000049EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorchLED4/TorchLED4-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TorchLED4/TorchLED4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E116504E13AFF16000049EE1 /* Build configuration list for PBXProject "TorchLED4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E116507313AFF16000049EE1 /* Debug */,
+				E116507413AFF16000049EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E116507513AFF16000049EE1 /* Build configuration list for PBXNativeTarget "TorchLED4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E116507613AFF16000049EE1 /* Debug */,
+				E116507713AFF16000049EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E116504B13AFF16000049EE1 /* Project object */;
+}
