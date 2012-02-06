@@ -4,7 +4,6 @@ In this App I used the AVFOundation Framework, to create a simple App that allow
 ## ScreenShots:
 
 ![TorchLED4 ON](http://dl.dropbox.com/u/3655093/TorchLED4/iOS%20Simulator%20Screen%20shot%20Feb%206%2C%202012%2012.54.46%20PM.png)
-![TorchLED4 OFF](http://dl.dropbox.com/u/3655093/TorchLED4/iOS%20Simulator%20Screen%20shot%20Feb%206%2C%202012%2012.53.09%20PM.png)
 
 
 License Agreement:
