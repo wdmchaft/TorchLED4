@@ -9,7 +9,7 @@
 #import "TorchLED4ViewController.h"
 
 @implementation TorchLED4ViewController
-@synthesize videoCaptureDevice,imageBackground,isTorch,powerButton,whiteView;
+@synthesize imageBackground,isTorch,powerButton,whiteView;
 
 - (void)dealloc
 {
@@ -17,50 +17,43 @@
     [whiteView release];
     [powerButton release];
     [imageBackground release];
-    [captureSession stopRunning];
-    [captureSession release];
-    [videoCaptureDevice release];
-    [videoInput release];
+}
+
+- (void)setTorch: (BOOL) on
+{
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([device hasTorch]) {
+        [device lockForConfiguration:nil];
+        [device setTorchMode: on ? AVCaptureTorchModeOn : AVCaptureTorchModeOff];
+        [device unlockForConfiguration];
+    }
 }
 
 -(IBAction)turnTorchOn {
     
-    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    
-    if ([device hasTorch] && [device hasFlash]){
         
         if (!isTorch) {
          
-            videoCaptureDevice.torchMode = AVCaptureTorchModeOn;
-           [imageBackground setHidden:NO];
-            
-            
+            [imageBackground setHidden:NO];
             UIImage *image = [UIImage imageNamed:@"turnedONButton.png"];
             UIImage *powerON = [image stretchableImageWithLeftCapWidth:0 topCapHeight:0.0];
             [powerButton setBackgroundImage:powerON forState:UIControlStateNormal];
-            
-           
-
-            
+                        
             isTorch=TRUE;
+            [self setTorch:isTorch];
                 
          }else{
              UIImage *image = [UIImage imageNamed:@"turnedOffButton.png"];
              UIImage *powerOff = [image stretchableImageWithLeftCapWidth:0 topCapHeight:0.0];
              [powerButton setBackgroundImage:powerOff forState:UIControlStateNormal];
-             
-            
-             
-             videoCaptureDevice.torchMode = AVCaptureTorchModeOff;
-            [imageBackground setHidden:YES];
-                isTorch =FALSE;
-                
+
+             [imageBackground setHidden:YES];
+             isTorch =FALSE;
+             [self setTorch:isTorch];
         }
-    }else{ 
-        whiteView = [[WhiteScreen alloc] init];
-        [self presentModalViewController:whiteView animated:YES];
-    }
 }
+
+
 
 
 - (void)didReceiveMemoryWarning
@@ -76,24 +69,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 -(void)viewDidAppear:(BOOL)animated{
-    videoCaptureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];    
-    if ([videoCaptureDevice hasTorch] && [videoCaptureDevice hasFlash]){
-        captureSession = [[AVCaptureSession alloc] init];
-        
-        NSError *error = nil;
-        videoInput = [AVCaptureDeviceInput deviceInputWithDevice:videoCaptureDevice error:&error];
-        
-        [captureSession addInput:videoInput];
-        AVCaptureVideoDataOutput* videoOutput = [[AVCaptureVideoDataOutput alloc] init];
-        //[videoOutput setSampleBufferDelegate:self queue:dispatch_get_current_queue()];
-        [videoCaptureDevice lockForConfiguration:nil];
-        [captureSession addOutput:videoOutput];
-        
-        [captureSession startRunning];
-        
-        isTorch = FALSE;
-        
-    }
+    isTorch = FALSE;
 
 }
 - (void)viewDidLoad

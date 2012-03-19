@@ -27,28 +27,6 @@
 }
 
 
--(void)setOffTorch{
-   
-    if (self.viewController.videoCaptureDevice.torchMode == AVCaptureTorchModeOn) {
-        self.viewController.imageBackground.hidden = YES;
-        self.viewController.videoCaptureDevice.torchMode = AVCaptureTorchModeOff;
-        self.viewController.isTorch=FALSE;
-        
-        UIImage *image = [UIImage imageNamed:@"turnedOffButton.png"];
-        UIImage *powerOff = [image stretchableImageWithLeftCapWidth:0 topCapHeight:0.0];
-        
-        [self.viewController.powerButton setBackgroundImage:powerOff forState:UIControlStateNormal];
-        image = nil;
-        [image release];
-
-        
-    }else{
-        [self.viewController.whiteView dismissModalViewControllerAnimated:NO];
-    }
-    
-
-    
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -57,7 +35,6 @@
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
    
-    [self setOffTorch];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -66,8 +43,7 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
-    
-    [self setOffTorch];
+
 }
 
 

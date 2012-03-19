@@ -13,9 +13,7 @@
 @interface TorchLED4ViewController : UIViewController {
     
     BOOL isTorch;
-    AVCaptureSession *captureSession;
-    AVCaptureDevice *videoCaptureDevice;
-    AVCaptureDeviceInput *videoInput;
+
     
     IBOutlet UIImageView *imageBackground;
     
@@ -23,7 +21,7 @@
     WhiteScreen *whiteView;
     
 }
-@property(nonatomic,retain) AVCaptureDevice *videoCaptureDevice;
+
 @property(nonatomic,retain) UIImageView *imageBackground;
 @property(nonatomic,retain) UIButton *powerButton;
 @property(nonatomic,retain) WhiteScreen *whiteView;
